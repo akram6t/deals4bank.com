@@ -322,7 +322,7 @@ export default function HeroSection() {
                         type="text"
                         value={formData.pincode}
                         onChange={(e) => handleInputChange('pincode', e.target.value)}
-                        className={`bg-gray-50 dark:bg-gray-700 border-gray-200 dark:bg-neutral-800 text-gray-900 dark:text-white px-4 py-3 placeholder:text-gray-600 dark:placeholder:text-gray-400 transition-colors duration-200 ${errors.pincode ? 'border-red-500' : ''}`}
+                        className={`bg-gray-50 dark:bg-neutral-800 border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white px-4 py-3 placeholder:text-gray-600 dark:placeholder:text-gray-400 transition-colors duration-200 ${errors.pincode ? 'border-red-500' : ''}`}
                         placeholder="Enter pincode"
                       />
                       {errors.pincode && <p className="text-red-500 text-sm mt-1">{errors.pincode}</p>}
