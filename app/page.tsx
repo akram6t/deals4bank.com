@@ -21,7 +21,7 @@ export default function Home() {
             with over 1 million satisfied customers across India.
           </p> */}
           {/* Trust Badges */}
-          <div className="mt-3 flex flex-wrap gap-6 text-sm">
+          <div className="mt-3 flex flex-wrap text-sm gap-3">
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
               <span className="text-blue-600 dark:text-blue-400 font-medium">Quick Approval</span>

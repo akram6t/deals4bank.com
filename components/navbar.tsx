@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo and Company Name - Left */}
           <div className="flex items-center">
-            <Building2 className="h-8 w-8 text-blue-600 dark:text-blue-400 mr-3" />
+            <Building2 className="h-6 w-6 md:h-8 w-8 text-blue-600 dark:text-blue-400 mr-3 md:mr-3" />
             <Link href="/" className="text-xl text-blue-600 font-bold dark:text-blue-400">
               Deal4bank
             </Link>
