@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
       
       {/* Title and Description Section */}
-      <section className="py-12 transition-colors duration-200">
+      <section className="py-4 transition-colors duration-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-xl lg:text-3xl font-bold text-gray-900 dark:text-white">
             India's Leading Financial Services Platform

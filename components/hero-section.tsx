@@ -179,7 +179,7 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
           {/* Service Tabs Section - Right Side (Hidden on mobile, shown after form) */}
-          <div className="order-1 lg:order-2">
+          <div className="order-2 lg:order-1">
             {/* Mobile Only Heading */}
             <h2 className="text-lg font-semibold text-neutral-900 dark:text-white mb-4">Our Services and rates.</h2>
 
@@ -191,7 +191,7 @@ export default function HeroSection() {
                   onClick={() => setActiveTab(tab.id)}
                   className={`px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors duration-200 ${activeTab === tab.id
                       ? 'bg-blue-600 text-white'
-                      : 'bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-neutral-700 border border-gray-200 dark:border-gray-700'
+                      : 'dark:bg-neutral-800 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-neutral-700 border border-gray-300 dark:border-gray-700'
                     }`}
                 >
                   <span>{tab.icon}</span>
@@ -236,7 +236,7 @@ export default function HeroSection() {
           </div>
 
           {/* Form Section - Left Side (Shown first on mobile) */}
-          <div className="order-2 lg:order-1">
+          <div className="order-1 lg:order-2">
             <Card className="shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-neutral-900 backdrop-blur-sm transition-colors duration-200">
               <CardHeader className="text-center pb-4">
                 <CardTitle className="text-xl text-gray-900 dark:text-white">Apply for Service</CardTitle>
