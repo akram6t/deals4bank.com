@@ -1,9 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Sun, Moon } from 'lucide-react';
+import { useTheme } from '@/contexts/theme-context';
 
 export default function Footer() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <footer className="mt-10 bg-white dark:bg-neutral-900 text-gray-900 dark:text-white backdrop-blur-sm transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -30,6 +33,18 @@ export default function Footer() {
         <div className="border-t border-gray-200 dark:border-gray-800 mt-4 pt-4 text-center text-gray-500 dark:text-gray-400 text-sm transition-colors duration-200">
           <p>&copy; 2024 MoneyMoney.com. All rights reserved.</p>
         </div>
+         {/* Theme Toggle Button */}
+         <button
+              onClick={toggleTheme}
+              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+              aria-label="Toggle theme"
+            >
+              {theme === 'dark' ? (
+                <Sun className="h-5 w-5" />
+              ) : (
+                <Moon className="h-5 w-5" />
+              )}
+            </button>
       </div>
     </footer>
   );
