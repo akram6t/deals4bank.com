@@ -13,8 +13,8 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo and Company Name - Left */}
           <div className="flex items-center">
-            <Building2 className="h-8 w-8 text-blue-600 mr-3" />
-            <Link href="/" className="text-2xl font-bold text-gray-900 dark:text-white">
+            <Building2 className="h-8 w-8 text-blue-600 dark:text-blue-400 mr-3" />
+            <Link href="/" className="text-xl text-blue-600 font-bold dark:text-blue-400">
               Deal4bank
             </Link>
           </div>
@@ -22,7 +22,7 @@ export default function Navbar() {
           {/* Contact Number and Theme Toggle - Right */}
           <div className="flex items-center space-x-4">
             <div className="flex items-center text-base text-gray-700 dark:text-gray-300">
-              <Phone className="h-4 w-4 mr-2 text-blue-600" />
+              <Phone className="h-4 w-4 mr-2 text-blue-600 dark:text-blue-400" />
               <span>1800-123-4567</span>
             </div>
             

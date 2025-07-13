@@ -10,16 +10,16 @@ export default function Home() {
       <Navbar />
       
       {/* Title and Description Section */}
-      <section className="py-4 transition-colors duration-200">
+      <section className="py-4 transition-colors duration-200 mb-5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-xl lg:text-3xl font-bold text-gray-900 dark:text-white">
             India's Leading Financial Services Platform
           </h1>
-          <p className="mt-2 text-sm md:text-lg text-gray-600 dark:text-gray-300 mx-auto leading-relaxed">
+          {/* <p className="mt-2 text-sm md:text-lg text-gray-600 dark:text-gray-300 mx-auto leading-relaxed">
             Get instant access to competitive loans, comprehensive insurance plans, smart investment options, 
             and property services. We make financial solutions simple, transparent, and tailored to your needs 
             with over 1 million satisfied customers across India.
-          </p>
+          </p> */}
           {/* Trust Badges */}
           <div className="mt-3 flex flex-wrap gap-6 text-sm">
             <div className="flex items-center space-x-2">

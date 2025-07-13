@@ -184,13 +184,13 @@ export default function HeroSection() {
             <h2 className="text-lg font-semibold text-neutral-900 dark:text-white mb-4">Our Services and rates.</h2>
 
             {/* Tab Navigation */}
-            <div className="flex flex-wrap gap-2 mb-6">
+            <div className="flex items-center gap-2 mb-6 pb-2 overflow-x-scroll">
               {serviceTabs.map((tab) => (
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
                   className={`px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors duration-200 ${activeTab === tab.id
-                      ? 'bg-blue-600 text-white'
+                      ? 'bg-blue-600 text-white dark:bg-blue-500'
                       : 'dark:bg-neutral-800 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-neutral-700 border border-gray-300 dark:border-gray-700'
                     }`}
                 >
@@ -361,7 +361,7 @@ export default function HeroSection() {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 transition-colors duration-200"
+                    className="w-full bg-blue-600 dark:bg-blue-500 hover:bg-blue-700 text-white py-3 transition-colors duration-200"
                   >
                     {isSubmitting ? 'Submitting...' : 'Submit Application'}
                   </Button>

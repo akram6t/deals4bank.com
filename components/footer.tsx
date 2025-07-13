@@ -5,12 +5,12 @@ import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'luc
 
 export default function Footer() {
   return (
-    <footer className="mt-10 bg-white dark:bg-gray-900 text-gray-900 dark:text-white backdrop-blur-sm transition-colors duration-200">
+    <footer className="mt-10 bg-white dark:bg-neutral-900 text-gray-900 dark:text-white backdrop-blur-sm transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Company Info */}
           <div className="text-center md:text-left">
-            <h3 className="text-lg font-bold text-blue-600 mb-2">MoneyMoney</h3>
+            <h3 className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">Deal4bank</h3>
             <p className="text-gray-600 dark:text-gray-300 text-sm">Your trusted financial partner</p>
           </div>
 
