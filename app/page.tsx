@@ -23,16 +23,16 @@ export default function Home() {
           {/* Trust Badges */}
           <div className="mt-3 flex flex-wrap gap-6 text-sm">
             <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-              <span className="text-blue-600 font-medium">Quick Approval</span>
+              <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
+              <span className="text-blue-600 dark:text-blue-400 font-medium">Quick Approval</span>
             </div>
             <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-              <span className="text-blue-600 font-medium">Best Rates</span>
+              <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
+              <span className="text-blue-600 font-medium dark:text-blue-400">Best Rates</span>
             </div>
             <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-              <span className="text-blue-600 font-medium">No Hidden Charges</span>
+              <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
+              <span className="text-blue-600 font-medium dark:text-blue-400">No Hidden Charges</span>
             </div>
           </div>
         </div>

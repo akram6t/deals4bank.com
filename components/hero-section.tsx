@@ -191,7 +191,7 @@ export default function HeroSection() {
                   onClick={() => setActiveTab(tab.id)}
                   className={`px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors duration-200 ${activeTab === tab.id
                       ? 'bg-blue-600 text-white'
-                      : 'bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
+                      : 'bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-neutral-700 border border-gray-200 dark:border-gray-700'
                     }`}
                 >
                   <span>{tab.icon}</span>
@@ -201,12 +201,12 @@ export default function HeroSection() {
             </div>
 
             {/* Tab Content */}
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 transition-colors duration-200">
+            <div className="bg-white dark:bg-neutral-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700 transition-colors duration-200">
               {serviceTabs.map((tab) => (
                 activeTab === tab.id && (
                   <div key={tab.id} className="space-y-4">
                     {tab.data.map((item, index) => (
-                      <div key={index} className="bg-white dark:bg-gray-700 rounded-lg p-4 border border-gray-200 dark:border-gray-600 transition-colors duration-200">
+                      <div key={index} className="bg-white dark:bg-neutral-800 rounded-lg p-4 border border-gray-200 dark:border-gray-600 transition-colors duration-200">
                         <div className="flex items-center space-x-3 mb-2">
                           <div className="p-2 rounded-lg bg-blue-600/20">
                             <item.icon className="h-5 w-5 text-blue-600" />
@@ -237,7 +237,7 @@ export default function HeroSection() {
 
           {/* Form Section - Right Side (Shown first on mobile) */}
           <div className="order-1 lg:order-2">
-            <Card className="shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 backdrop-blur-sm transition-colors duration-200">
+            <Card className="shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-neutral-900 backdrop-blur-sm transition-colors duration-200">
               <CardHeader className="text-center pb-4">
                 <CardTitle className="text-xl text-gray-900 dark:text-white">Apply for Service</CardTitle>
               </CardHeader>
@@ -251,7 +251,7 @@ export default function HeroSection() {
                       type="text"
                       value={formData.fullName}
                       onChange={(e) => handleInputChange('fullName', e.target.value)}
-                      className={`bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white px-4 py-3 placeholder:text-gray-600 dark:placeholder:text-gray-400 transition-colors duration-200 ${errors.fullName ? 'border-red-500' : ''}`}
+                      className={`bg-gray-50 dark:bg-neutral-800 border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white px-4 py-3 placeholder:text-gray-600 dark:placeholder:text-gray-400 transition-colors duration-200 ${errors.fullName ? 'border-red-500' : ''}`}
                       placeholder="Enter your full name"
                     />
                     {errors.fullName && <p className="text-red-500 text-sm mt-1">{errors.fullName}</p>}
@@ -265,7 +265,7 @@ export default function HeroSection() {
                       type="email"
                       value={formData.email}
                       onChange={(e) => handleInputChange('email', e.target.value)}
-                      className={`bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white px-4 py-3 placeholder:text-gray-600 dark:placeholder:text-gray-400 transition-colors duration-200 ${errors.email ? 'border-red-500' : ''}`}
+                      className={`bg-gray-50 dark:bg-neutral-800 border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white px-4 py-3 placeholder:text-gray-600 dark:placeholder:text-gray-400 transition-colors duration-200 ${errors.email ? 'border-red-500' : ''}`}
                       placeholder="Enter your email address"
                     />
                     {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
@@ -279,7 +279,7 @@ export default function HeroSection() {
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => handleInputChange('phone', e.target.value)}
-                      className={`bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white px-4 py-3 placeholder:text-gray-600 dark:placeholder:text-gray-400 transition-colors duration-200 ${errors.phone ? 'border-red-500' : ''}`}
+                      className={`bg-gray-50 dark:bg-neutral-800 border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white px-4 py-3 placeholder:text-gray-600 dark:placeholder:text-gray-400 transition-colors duration-200 ${errors.phone ? 'border-red-500' : ''}`}
                       placeholder="Enter your phone number"
                     />
                     {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
@@ -294,7 +294,7 @@ export default function HeroSection() {
                         type="text"
                         value={formData.city}
                         onChange={(e) => handleInputChange('city', e.target.value)}
-                        className={`bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white px-4 py-3 placeholder:text-gray-600 dark:placeholder:text-gray-400 transition-colors duration-200 ${errors.city ? 'border-red-500' : ''}`}
+                        className={`bg-gray-50 dark:bg-neutral-800 border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white px-4 py-3 placeholder:text-gray-600 dark:placeholder:text-gray-400 transition-colors duration-200 ${errors.city ? 'border-red-500' : ''}`}
                         placeholder="Enter your city"
                       />
                       {errors.city && <p className="text-red-500 text-sm mt-1">{errors.city}</p>}
@@ -303,7 +303,7 @@ export default function HeroSection() {
                     <div>
                       <Label htmlFor="state" className="text-gray-900 dark:text-white mb-2 block">State *</Label>
                       <Select value={formData.state} onValueChange={(value) => handleInputChange('state', value)}>
-                        <SelectTrigger className={`bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white px-4 py-3 transition-colors duration-200 ${errors.state ? 'border-red-500' : ''}`}>
+                        <SelectTrigger className={`bg-gray-50 dark:bg-neutral-800 border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white px-4 py-3 transition-colors duration-200 ${errors.state ? 'border-red-500' : ''}`}>
                           <SelectValue placeholder="Select state" className="text-gray-600 dark:text-gray-400" />
                         </SelectTrigger>
                         <SelectContent className="bg-white dark:bg-gray-700 border-gray-200 dark:border-gray-600">
@@ -322,7 +322,7 @@ export default function HeroSection() {
                         type="text"
                         value={formData.pincode}
                         onChange={(e) => handleInputChange('pincode', e.target.value)}
-                        className={`bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white px-4 py-3 placeholder:text-gray-600 dark:placeholder:text-gray-400 transition-colors duration-200 ${errors.pincode ? 'border-red-500' : ''}`}
+                        className={`bg-gray-50 dark:bg-gray-700 border-gray-200 dark:bg-neutral-800 text-gray-900 dark:text-white px-4 py-3 placeholder:text-gray-600 dark:placeholder:text-gray-400 transition-colors duration-200 ${errors.pincode ? 'border-red-500' : ''}`}
                         placeholder="Enter pincode"
                       />
                       {errors.pincode && <p className="text-red-500 text-sm mt-1">{errors.pincode}</p>}
@@ -333,10 +333,10 @@ export default function HeroSection() {
                   <div>
                     <Label htmlFor="serviceType" className="text-gray-900 dark:text-white mb-2 block">Service Type *</Label>
                     <Select value={formData.serviceType} onValueChange={(value) => handleInputChange('serviceType', value)}>
-                      <SelectTrigger className={`bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white px-4 py-3 transition-colors duration-200 ${errors.serviceType ? 'border-red-500' : ''}`}>
+                      <SelectTrigger className={`bg-gray-50 dark:bg-neutral-800 border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white px-4 py-3 transition-colors duration-200 ${errors.serviceType ? 'border-red-500' : ''}`}>
                         <SelectValue placeholder="Select service type" className="text-gray-600 dark:text-gray-400" />
                       </SelectTrigger>
-                      <SelectContent className="bg-white dark:bg-gray-700 border-gray-200 dark:border-gray-600 max-h-64 overflow-y-auto">
+                      <SelectContent className="bg-white dark:bg-neutral-800   border-gray-200 dark:border-gray-600 max-h-64 overflow-y-auto">
                         {Object.entries(serviceCategories).map(([category, services]) => (
                           <div key={category}>
                             <div className="px-2 py-1.5 text-xs font-bold text-gray-900 dark:text-white uppercase tracking-wider">
