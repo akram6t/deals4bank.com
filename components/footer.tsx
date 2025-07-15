@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Sun, Moon } from 'lucide-react';
 import { useTheme } from '@/contexts/theme-context';
 
