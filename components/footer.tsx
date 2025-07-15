@@ -29,7 +29,7 @@ export default function Footer() {
           <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-50 dark:text-gray-300">
             <div className="flex items-center">
               <Phone className="h-4 w-4 mr-2 text-green-500" />
-              <a href='https://wa.me/9243956990' target='_blank'>+91-9243956990</a>
+              <a href='https://wa.me/9243956990?text="from deals4bank.com \n I am Interested in you service.' target='_blank'>+91-9243956990</a>
             </div>
             <div className="flex items-center">
               <Mail className="h-4 w-4 mr-2 text-blue-400" />
@@ -44,13 +44,13 @@ export default function Footer() {
         {/* Theme Toggle Button */}
         <button
           onClick={toggleTheme}
-          className="absolute right-3 bottom-3 p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+          className="absolute right-3 bottom-3 p-1 rounded-lg bg-blue-950 text-gray-300 dark:hover:bg-gray-700 transition-colors duration-200"
           aria-label="Toggle theme"
         >
           {theme === 'dark' ? (
-            <Sun className="h-5 w-5" />
+            <Sun className="h-2 w-2" />
           ) : (
-            <Moon className="h-5 w-5" />
+            <Moon className="h-2 w-2" />
           )}
         </button>
       </div>

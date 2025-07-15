@@ -24,7 +24,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-4">
             <div className="flex items-center text-base">
               <Phone className="h-4 w-4 mr-2" />
-              <a href='tel:+919243956990'>+91-9243956990</a>
+              <a href='tel:919243956990'>+919243956990</a>
             </div>
           </div>
         </div>

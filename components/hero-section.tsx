@@ -61,7 +61,7 @@ export default function HeroSection({ openedTab, onTabChange }: HeroSectionProps
   const handleFormSubmit = async (formData: HeroFormData) => {
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 2000));
-    alert(`Application submitted successfully!\n\nWe will contact you soon at ${formData.phone} or ${formData.email}`);
+    // alert(`Application submitted successfully!\n\nWe will contact you soon at ${formData.phone} or ${formData.email}`);
   };
 
   return (
