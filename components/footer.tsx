@@ -30,7 +30,7 @@ export default function Footer() {
           <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-50 dark:text-gray-300">
             <div className="flex items-center">
               <Phone className="h-4 w-4 mr-2 text-green-500" />
-              <a href='https://wa.me/+919243956990' target='_blank'>+91-9243956990</a>
+              <a href='https://wa.me/9243956990' target='_blank'>+91-9243956990</a>
             </div>
             <div className="flex items-center">
               <Mail className="h-4 w-4 mr-2 text-blue-400" />
