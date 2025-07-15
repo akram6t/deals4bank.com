@@ -17,7 +17,7 @@ export default function Footer() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <footer className="mt-10 bg-white bg-blue-900 dark:bg-neutral-900 text-gray-100 dark:text-white backdrop-blur-sm transition-colors duration-200">
+    <footer className="mt-10 bg-blue-800 dark:bg-neutral-900 text-gray-100 dark:text-white backdrop-blur-sm transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 relative">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Company Info */}
