@@ -16,6 +16,32 @@
   }
 }
 
+@layer utilities {
+
+  /* Chrome, Safari, Opera */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Firefox */
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+
+    overflow-x: auto;
+    position: relative;
+    /* अगर चाहें तो scrollbar custom color */
+    scrollbar-color: #3386ff #dbeafe;
+    /* thumb color (blue), track color (light blue) */
+    scrollbar-width: thin;
+    /* Mask for fade effect */
+    -webkit-mask-image: linear-gradient(to right, transparent 0px, #3386ff 15px, #3386ff calc(100% - 40px), transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0px, #3386ff 15px, #3386ff calc(100% - 40px), transparent 100%);
+  }
+}
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -44,6 +70,7 @@
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -76,6 +103,13 @@
   * {
     @apply border-border;
   }
+
+  html {
+    scroll-behavior: smooth;
+    /* ✅ */
+  }
+
+
   body {
     @apply text-foreground;
     background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 25%, #ffffff 50%, #f0f9ff 75%, #e0f2fe 100%);

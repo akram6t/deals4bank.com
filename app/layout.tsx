@@ -73,7 +73,7 @@ export default function RootLayout({
               name: 'MoneyMoney.com',
               description: 'Professional financial services platform offering loans and insurance solutions',
               url: 'https://moneymoney.com',
-              telephone: '1800-123-4567',
+              telephone: '+91-9243956990',
               email: 'info@moneymoney.com',
               address: {
                 '@type': 'PostalAddress',
