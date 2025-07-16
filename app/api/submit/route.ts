@@ -3,7 +3,8 @@ import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import https from 'https';
 
-export const runtime = "edge";
+// app/api/submit/route.ts
+export const dynamic = 'force-dynamic'; // Add this at the top of your file
 
 const resend = new Resend(process.env.RESEND_API_KEY! as string);
 const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN! as string;
