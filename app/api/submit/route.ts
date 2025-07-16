@@ -4,13 +4,15 @@ import { Resend } from 'resend';
 import https from 'https';
 
 // app/api/submit/route.ts
-export const dynamic = 'force-dynamic'; // Add this at the top of your file
+// export const dynamic = 'force-dynamic'; // Add this at the top of your file
 
-const resend = new Resend(process.env.RESEND_API_KEY! as string);
+const RESEND_API_KEY = process.env.RESEND_API_KEY! as string
 const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN! as string;
 const CHAT_ID = process.env.TELEGRAM_CHAT_ID! as string;
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL! as string;
 const RESEND_DOMAIN = process.env.RESEND_DOMAIN! as string;
+
+const resend = new Resend(RESEND_API_KEY);
 
 export async function POST(request: Request) {
     try {
