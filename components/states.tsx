@@ -32,7 +32,7 @@ export function States({ onLinkClick }: StatesProps) {
             <div className="mt-3 flex flex-col sm:flex-row text-sm gap-3 lg:hidden">
                 {
                     services.map(service => (
-                        <div className="flex items-center space-x-2">
+                        <div key={service.id} className="flex items-center space-x-2">
                             <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
                             <a onClick={() => onLinkClick(service.id)} href="#services"
                                 className="text-blue-600 dark:text-blue-400 font-medium cursor-pointer hover:underline">{service.title} </a>

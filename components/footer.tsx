@@ -2,6 +2,7 @@
 
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Sun, Moon } from 'lucide-react';
 import { useTheme } from '@/contexts/theme-context';
+import Image from 'next/image';
 
 
 const getMailUri = (): string => {
@@ -28,7 +29,7 @@ export default function Footer() {
           {/* Contact Info */}
           <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-50 dark:text-gray-300">
             <div className="flex items-center">
-              <Phone className="h-4 w-4 mr-2 text-green-500" />
+              <Image src="/whatsapp.png" alt='wa' width={16} height={16} className="h-4 w-4 mr-2 text-green-500" />
               <a href='https://wa.me/9243956990?text=from deals4bank.com \n I am Interested in your service.' target='_blank'>+91-9243956990</a>
             </div>
             <div className="flex items-center">

@@ -9,8 +9,6 @@ const CHAT_ID = process.env.TELEGRAM_CHAT_ID! as string;
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL! as string;
 const RESEND_DOMAIN = process.env.RESEND_DOMAIN! as string;
 
-export const dynamic = 'force-dynamic'; // Let Next.js decide
-
 export async function POST(request: Request) {
     try {
         const formData = await request.json();
