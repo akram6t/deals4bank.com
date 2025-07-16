@@ -12,7 +12,7 @@ const CHAT_ID = process.env.TELEGRAM_CHAT_ID! as string;
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL! as string;
 const RESEND_DOMAIN = process.env.RESEND_DOMAIN! as string;
 
-const resend = new Resend(RESEND_API_KEY);
+const resend = new Resend("re_CrXSMxH6_CgReSh3rZjRv3EBBZn3W9BRv");
 
 export async function POST(request: Request) {
     try {
