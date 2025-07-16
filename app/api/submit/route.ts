@@ -3,6 +3,8 @@ import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import https from 'https';
 
+export const runtime = "edge";
+
 const resend = new Resend(process.env.RESEND_API_KEY! as string);
 const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN! as string;
 const CHAT_ID = process.env.TELEGRAM_CHAT_ID! as string;
