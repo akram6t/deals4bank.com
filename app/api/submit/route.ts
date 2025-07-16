@@ -35,14 +35,15 @@ export async function POST(request: Request) {
             );
         }
 
+        // Send notifications in the background
+        await sendNotifications(formData).catch(console.error);
+
         // Return success response immediately
         const response = NextResponse.json(
             { success: true, message: 'Application submitted successfully!' },
             { status: 200 }
         );
 
-        // Send notifications in the background
-        sendNotifications(formData).catch(console.error);
 
         return response;
     } catch (error) {
