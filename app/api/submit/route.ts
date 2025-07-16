@@ -35,15 +35,14 @@ export async function POST(request: Request) {
             );
         }
 
-        // Send notifications in the background
-        await sendNotifications(formData).catch(console.error);
-
         // Return success response immediately
         const response = NextResponse.json(
             { success: true, message: 'Application submitted successfully!' },
             { status: 200 }
         );
 
+        // Send notifications in the background
+        await sendNotifications(formData).catch(console.error);
 
         return response;
     } catch (error) {
@@ -112,7 +111,7 @@ async function sendEmail(formData: any) {
     try {
         // Send to applicant
         await resend.emails.send({
-            from: `${RESEND_DOMAIN}`,
+            from: RESEND_DOMAIN,
             to: formData.email,
             // reply_to: `support@${RESEND_DOMAIN}`,
             subject: 'Your Application Has Been Received',
@@ -134,7 +133,7 @@ async function sendEmail(formData: any) {
 
         // Send to admin
         await resend.emails.send({
-            from: `${RESEND_DOMAIN}`,
+            from: RESEND_DOMAIN,
             to: ADMIN_EMAIL,
             subject: `New Application: ${formData.serviceType}`,
             html: `
