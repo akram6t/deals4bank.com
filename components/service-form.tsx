@@ -74,6 +74,7 @@ export function ApplyServiceForm({ onSubmit }: ApplyServiceFormProps) {
         setValue,
         formState: { errors, isSubmitting },
         trigger,
+        reset,
         watch,
     } = useForm<HeroFormData>({
         resolver: zodResolver(formSchema),
@@ -108,6 +109,8 @@ export function ApplyServiceForm({ onSubmit }: ApplyServiceFormProps) {
         try {
             await onSubmit(data);
             setIsSuccessModalOpen(true);
+            reset();
+
         } catch (error) {
             console.error('Submission error:', error);
         }
@@ -150,13 +153,18 @@ export function ApplyServiceForm({ onSubmit }: ApplyServiceFormProps) {
                         {/* Phone Number */}
                         <div ref={(el) => (errorRefs.current['phone'] = el)}>
                             <Label htmlFor="phone" className="text-gray-900 dark:text-white mb-2 block">Phone Number *</Label>
-                            <Input
-                                id="phone"
-                                type="tel"
-                                {...register('phone')}
-                                className={`bg-gray-100 dark:bg-neutral-800 border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white px-4 py-3 placeholder:text-gray-600 dark:placeholder:text-gray-400 transition-colors duration-200 ${errors.phone ? 'border-red-500' : ''}`}
-                                placeholder="Enter your phone number"
-                            />
+                            <div className='relative'>
+                                <Input
+                                    id="phone"
+                                    type="tel"
+                                    {...register('phone')}
+                                    className={`bg-gray-100 dark:bg-neutral-800 border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white ps-9 pe-4 py-3 placeholder:text-gray-600 dark:placeholder:text-gray-400 transition-colors duration-200 ${errors.phone ? 'border-red-500' : ''}`}
+                                    placeholder="Enter your phone number"
+                                />
+                                <span className='text-sm opacity-70 absolute left-2 top-2 translate-y-[2px]'>
+                                    +91
+                                </span>
+                            </div>
                             {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone.message}</p>}
                         </div>
 

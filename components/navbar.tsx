@@ -12,8 +12,8 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo and Company Name - Left */}
           <div className="flex items-center">
-            <div className='h-6 w-6 md:h-8 w-8 mr-3 md:mr-3 bg-white rounded-full'>
-              <Image className="h-full w-full" src={'/logo.png'} width={10} height={10} alt='logo' />
+            <div className='h-6 w-6 p-1 overflow-hidden md:h-8 w-8 mr-3 md:mr-3 bg-white rounded-full'>
+              <Image className="h-full w-full object-cover" src={'/logo.png'} width={10} height={10} alt='logo' />
             </div>
             <Link href="/" className="text-xl font-bold">
               Deals4Bank

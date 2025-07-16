@@ -58,10 +58,28 @@ export default function HeroSection({ openedTab, onTabChange }: HeroSectionProps
     }
   ];
 
+  // In your parent component:
   const handleFormSubmit = async (formData: HeroFormData) => {
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    // alert(`Application submitted successfully!\n\nWe will contact you soon at ${formData.phone} or ${formData.email}`);
+    try {
+      const response = await fetch('/api/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to submit form');
+      }
+
+      return data;
+    } catch (error) {
+      console.error('Submission error:', error);
+      throw error;
+    }
   };
 
   return (
@@ -76,7 +94,7 @@ export default function HeroSection({ openedTab, onTabChange }: HeroSectionProps
           {/* Service Tabs Section - Right Side (Hidden on mobile, shown after form) */}
           <div className="order-2 lg:order-1">
             {/* Mobile Only Heading */}
-            <h2 className="text-sm font-semibold uppercase text-blue-700 dark:text-white mb-4">Our Services and rates:-</h2>
+            <h2 className="text-sm font-semibold uppercase text-blue-700 dark:text-blue-400 mb-4">Our Services and rates:-</h2>
 
             {/* Tab Navigation */}
             <div id="services" className="z-10 bg-white dark:bg-neutral-900 pt-2 pb-3 flex items-center gap-2 mb-2 overflow-x-scroll scrollbar-hide border-b border-gray-200 dark:border-neutral-700">
