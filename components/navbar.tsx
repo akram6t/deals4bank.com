@@ -16,7 +16,7 @@ export default function Navbar() {
               <Image className="h-full w-full object-cover" src={'/logo.png'} width={10} height={10} alt='logo' />
             </div>
             <Link href="/" className="text-xl font-bold">
-              Deals4Bank
+              Deal4Bank
             </Link>
           </div>
 

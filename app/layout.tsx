@@ -6,7 +6,7 @@ import { ThemeProvider } from '@/contexts/theme-context';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'MoneyMoney.com - Professional Financial Services | Loans & Insurance',
+  title: 'Deal4Bank - Professional Financial Services | Loans, Insurance, Investment & Property',
   description: 'Leading financial services platform offering competitive loan rates and comprehensive insurance solutions. Get quick approvals for personal loans, home loans, car loans, and complete insurance coverage.',
   keywords: 'financial services, loans, insurance, personal loans, home loans, car loans, life insurance, health insurance, India',
   authors: [{ name: 'MoneyMoney.com' }],
@@ -17,21 +17,21 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://moneymoney.com'),
+  metadataBase: new URL('https://deal4bank.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'MoneyMoney.com - Professional Financial Services',
+    title: 'deal4bank.com - Professional Financial Services',
     description: 'Leading financial services platform offering competitive loan rates and comprehensive insurance solutions.',
-    url: 'https://moneymoney.com',
-    siteName: 'MoneyMoney.com',
+    url: 'https://deal4bank.com',
+    siteName: 'deal4bank.com',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'MoneyMoney.com - Financial Services',
+        alt: 'deal4bank.com - Financial Services',
       },
     ],
     locale: 'en_IN',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MoneyMoney.com - Professional Financial Services',
+    title: 'deal4bank.com - Professional Financial Services',
     description: 'Leading financial services platform offering competitive loan rates and comprehensive insurance solutions.',
     images: ['/og-image.jpg'],
   },
@@ -70,21 +70,21 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'FinancialService',
-              name: 'MoneyMoney.com',
+              name: 'deal4bank.com',
               description: 'Professional financial services platform offering loans and insurance solutions',
               url: 'https://moneymoney.com',
               telephone: '+91-924395699',
-              email: 'info@moneymoney.com',
+              email: 'info@deal4bank.com',
               address: {
                 '@type': 'PostalAddress',
-                addressLocality: 'Mumbai',
+                addressLocality: 'Indore',
                 addressCountry: 'IN',
-                streetAddress: '123 Financial District'
+                streetAddress: 'Khirkiya, Madhya pradesh'
               },
               sameAs: [
-                'https://facebook.com/moneymoney',
-                'https://twitter.com/moneymoney',
-                'https://linkedin.com/company/moneymoney'
+                'https://facebook.com/deal4bank',
+                'https://twitter.com/deal4bank',
+                'https://linkedin.com/company/deal4bank'
               ],
               hasOfferCatalog: {
                 '@type': 'OfferCatalog',
@@ -102,6 +102,20 @@ export default function RootLayout({
                     itemOffered: {
                       '@type': 'InsurancePolicy',
                       name: 'Insurance Services'
+                    }
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Invenstment Ideas',
+                      name: 'Investment Services'
+                    }
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Property by or sale',
+                      name: 'Property Services'
                     }
                   }
                 ]
