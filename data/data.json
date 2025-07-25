@@ -1,0 +1,172 @@
+{
+  "company": {
+    "name": "Deal4Bank",
+    "tagline": "Your trusted financial partner",
+    "logo": "/logo.png",
+    "copyright": "© 2024 deal4bank.com. All rights reserved."
+  },
+  "contacts": {
+    "phone": "+91-9243956990",
+    "whatsapp": {
+      "number": "9243956990",
+      "text": "from deal4bank.com \n I am Interested in your service."
+    },
+    "email": {
+      "address": "info@deal4bank.online",
+      "subject": "Enquiry for your service",
+      "body": "Hello, I am interested in your service. Please contact me!"
+    }
+  },
+  "states": {
+    "heading": "Get <b>best deals</b> across <b>India</b> with <b>zero charges</b> — 100% hassle-free services!",
+    "services": [
+      {
+        "id": "Loan",
+        "title": "Loan"
+      },
+      {
+        "id": "Property",
+        "title": "Buy/sell property"
+      },
+      {
+        "id": "Property",
+        "title": "Insurance"
+      },
+      {
+        "id": "Investment",
+        "title": "Investment idea"
+      }
+    ]
+  },
+  "services": {
+    "tabs": [
+      {
+        "id": "Loan",
+        "title": "Loans",
+        "icon": "💰",
+        "data": [
+          {
+            "type": "Personal Loan",
+            "rate": "10.49% - 24%",
+            "tenure": "1 - 7 years",
+            "amount": "₹50K - ₹50L",
+            "icon": "User"
+          },
+          {
+            "type": "Home Loan",
+            "rate": "7.35% - 11%",
+            "tenure": "1 - 30 years",
+            "amount": "₹1L - ₹10Cr",
+            "icon": "Home"
+          },
+          {
+            "type": "Business Loan",
+            "rate": "12% - 24%",
+            "tenure": "1 - 3 years",
+            "amount": "₹1L - ₹1Cr",
+            "icon": "Building2"
+          },
+          {
+            "type": "Car Loan",
+            "rate": "8.75% - 18%",
+            "tenure": "1 - 7 years",
+            "amount": "₹1L - ₹50L",
+            "icon": "Car"
+          },
+          {
+            "type": "Loan Against Property",
+            "rate": "9% - 24%",
+            "tenure": "1 - 15 years",
+            "amount": "₹1L - ₹10Cr",
+            "icon": "Banknote"
+          }
+        ]
+      },
+      {
+        "id": "Insurance",
+        "title": "Insurance",
+        "icon": "🛡️",
+        "data": [
+          {
+            "type": "Life Insurance",
+            "coverage": "₹5L - ₹2Cr",
+            "premium": "From ₹500/month",
+            "features": "Tax benefits, Maturity benefits",
+            "icon": "Heart"
+          },
+          {
+            "type": "Health Insurance",
+            "coverage": "₹2L - ₹1Cr",
+            "premium": "From ₹200/month",
+            "features": "Cashless treatment, Pre-post hospitalization",
+            "icon": "Shield"
+          },
+          {
+            "type": "General Insurance",
+            "coverage": "Comprehensive",
+            "premium": "Competitive rates",
+            "features": "Vehicle, Home, Travel insurance",
+            "icon": "Headphones"
+          }
+        ]
+      },
+      {
+        "id": "Investment",
+        "title": "Investment",
+        "icon": "📈",
+        "data": [
+          {
+            "type": "Mutual Funds",
+            "returns": "8-15% p.a.",
+            "risk": "Low to High",
+            "features": "SIP starting ₹500, Professional management",
+            "icon": "BarChart3"
+          },
+          {
+            "type": "Fixed Deposit",
+            "returns": "6-8% p.a.",
+            "risk": "Very Low",
+            "features": "Guaranteed returns, Flexible tenure",
+            "icon": "Banknote"
+          },
+          {
+            "type": "ULIP",
+            "returns": "8-12% p.a.",
+            "risk": "Moderate",
+            "features": "Insurance + Investment, Tax benefits",
+            "icon": "TrendingDown"
+          }
+        ]
+      },
+      {
+        "id": "Property",
+        "title": "Property",
+        "icon": "🏘️",
+        "data": [
+          {
+            "type": "Buy Property",
+            "service": "Property search & verification",
+            "commission": "1-2%",
+            "features": "Legal assistance, Documentation",
+            "icon": "ShoppingCart"
+          },
+          {
+            "type": "Sell Property",
+            "service": "Marketing & buyer connection",
+            "commission": "1-2%",
+            "features": "Valuation, Marketing support",
+            "icon": "Home"
+          },
+          {
+            "type": "Property Consultation",
+            "service": "Investment advice",
+            "fee": "Consultation fee",
+            "features": "Market analysis, ROI calculation",
+            "icon": "Eye"
+          }
+        ]
+      }
+    ],
+    "heading": "Our Services and rates:-"
+  }
+}

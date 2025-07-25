@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/contexts/theme-context';
+import { Toaster } from 'sonner';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -9,9 +10,9 @@ export const metadata: Metadata = {
   title: 'Deal4Bank - Professional Financial Services | Loans, Insurance, Investment & Property',
   description: 'Leading financial services platform offering competitive loan rates and comprehensive insurance solutions. Get quick approvals for personal loans, home loans, car loans, and complete insurance coverage.',
   keywords: 'financial services, loans, insurance, personal loans, home loans, car loans, life insurance, health insurance, India',
-  authors: [{ name: 'MoneyMoney.com' }],
-  creator: 'MoneyMoney.com',
-  publisher: 'MoneyMoney.com',
+  authors: [{ name: 'Deal4Bank.com' }],
+  creator: 'Deal4Bank.com',
+  publisher: 'Deal4Bank.com',
   formatDetection: {
     email: false,
     address: false,
@@ -127,6 +128,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider>
           {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
