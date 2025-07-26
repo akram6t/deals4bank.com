@@ -1,36 +1,76 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
+landing-page/node_modules/
+landing-page/.pnp
+landing-page/.pnp.js
 
 # testing
-/coverage
+landing-page/coverage
 
 # next.js
-/.next/
-/out/
+landing-page/.next/
+landing-page/out/
 
 # production
-/build
+landing-page/build
 
 # misc
 .DS_Store
 *.pem
 
 # debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+landing-page/npm-debug.log*
+landing-page/yarn-debug.log*
+landing-page/yarn-error.log*
 
 # local env files
-.env
-.env*.local
+landing-page/.env
+landing-page/.env*.local
 
 # vercel
-.vercel
+landing-page/.vercel
 
 # typescript
-*.tsbuildinfo
-next-env.d.ts
+landing-page/*.tsbuildinfo
+landing-page/next-env.d.ts
+
+
+
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules/
+marketing-page/.pnp
+marketing-page/.pnp.js
+
+# testing
+marketing-page/coverage
+
+# next.js
+marketing-page/.next/
+marketing-page/out/
+
+# production
+marketing-page/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+marketing-page/npm-debug.log*
+marketing-page/yarn-debug.log*
+marketing-page/yarn-error.log*
+
+# local env files
+marketing-page/.env
+marketing-page/.env*.local
+
+# vercel
+marketing-page/.vercel
+
+# typescript
+marketing-page/*.tsbuildinfo
+marketing-page/next-env.d.ts
